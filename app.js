@@ -1,13 +1,15 @@
-(function($) {
+(function() {
 
-BlogPost = function(config) {
-	var content = $("<div>").append(config.content);
-	$("<h" + config.title.size + ">")
-		.append(config.title.text)
-		.appendTo(config.target)
-		.after(content);
+window.BlogPost = function(config) {
+
+	var title = document.createElement("h" + config.title.size);
+	title.appendChild(document.createTextNode(config.title.text));
+
+	var content = document.createElement("div");
+	content.appendChild(document.createTextNode(config.content));
+
+	config.target[0].appendChild(title);
+	config.target[0].appendChild(content);
 };
 
-BlogPost.prototype.destroy = function() {};
-
-})(Echo.jQuery);
+})();

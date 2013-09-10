@@ -17,10 +17,10 @@ dashboard.labels = {
 dashboard.templates.main =
 	'<div class="{class:container}">' +
 		'<label>{label:title}</label>' +
-		'<input type="text" class="{class:titleText}" value="{config:instance.config.title.text}"/>' +
+		'<input type="text" class="{class:titleText}" value="{config:instance.config.title.text}">' +
 		'<select class="{class:titleSize}"></select>' +
 		'<label>{label:content}</label>' +
-		'<textarea class="{class:content}">{config:instance.config.content}</textarea><br />' +
+		'<textarea class="{class:content}">{config:instance.config.content}</textarea><br>' +
 		'<button class="{class:submit}">{label:submit}</button>' +
 	'</div>';
 
@@ -78,8 +78,8 @@ dashboard.methods._getConfig = function() {
 
 dashboard.css =
 	'.{class:container} .{class:titleSize} { width: auto; }' +
-	'.{class:container} .{class:content} { width: 260px; }' +
-	'.{class:container} .{class:submit} { margin-left: 225px; }';
+	'.{class:container} .{class:submit} { margin-left: 225px; }' +
+	'.{class:container} .{class:content} { width: 260px; resize: none; }';
 
 Echo.AppServer.Dashboard.create(dashboard);
 
