@@ -1,7 +1,7 @@
 {
 	"id": "blog-post",
 	"name": "Blog Post",
-	"description": "",
+	"description": "", //TODO: fill this field
 	"icon": "[place_your_url_here]/icon.png",
 	"category": "applications",
 	"developer": {
