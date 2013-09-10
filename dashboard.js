@@ -43,7 +43,7 @@ dashboard.renderers.titleSize = function(element) {
 					? "selected" : ""
 			}
 		}));
-	})
+	});
 	return element;
 };
 
