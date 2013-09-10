@@ -1,0 +1,29 @@
+{
+	"id": "blog-post",
+	"name": "Blog Post",
+	"description": "This app allows to count visitors who opened the page with this application.",
+	"icon": "http://tracysmorris.com/wp-content/uploads/2011/05/livejournal_icon.png",
+	"category": "applications",
+	"developer": {
+		"id": "echo",
+		"name": "Echo",
+		"url": "http://www.aboutecho.com",
+		"email": "solutions@aboutecho.com",
+		"icon": "http://cdn.echoenabled.com/images/echo.png"
+	},
+	"plans": [{
+		"id": "unlimited",
+		"name": "Unlimited plan"
+	}],
+	"dashboards": [{
+		"id": "instances",
+		"title": "Instances",
+		"script": "http://ra.dbragin.ul.js-kit.com/dashboard.js",
+		"component": "BlogPost.Dashboard"
+	}],
+	"application": {
+		"component": "BlogPost",
+		"script": "http://ra.dbragin.ul.js-kit.com/app.js"
+	},
+	"version": "0.1.0"
+}
