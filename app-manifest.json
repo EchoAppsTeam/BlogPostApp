@@ -1,9 +1,9 @@
 {
 	"id": "blog-post",
 	"name": "Blog Post",
-	"description": "", //TODO: fill this field
+	"description": "BlogPost allows you to create blog posts consisting of two parts: header and body",
+	"app_version": "0.1.0",
 	"icon": "[place_your_url_here]/icon.png",
-	"category": "applications",
 	"developer": {
 		"id": "echo",
 		"name": "Echo",
@@ -11,19 +11,15 @@
 		"email": "solutions@aboutecho.com",
 		"icon": "http://cdn.echoenabled.com/images/echo.png"
 	},
-	"plans": [{
-		"id": "unlimited",
-		"name": "Unlimited plan"
-	}],
 	"dashboards": [{
 		"id": "instances",
 		"title": "Instances",
 		"script": "[place_your_url_here]/dashboard.js",
 		"component": "BlogPost.Dashboard"
 	}],
-	"application": {
+	"client_widget": {
 		"component": "BlogPost",
 		"script": "[place_your_url_here]/app.js"
 	},
-	"version": "0.1.0"
+	"cloudapp_protocol_version": "1.0.0"
 }
