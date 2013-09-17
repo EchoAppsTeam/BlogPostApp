@@ -1,6 +1,10 @@
 (function() {
 
-window.BlogPost = function(config) {
+if (!window.AcmeCorporation) window.AcmeCorporation = {};
+
+if (!AcmeCorporation.Apps) AcmeCorporation.Apps = {};
+
+AcmeCorporation.Apps.BlogPost = function(config) {
 
 	var title = document.createElement("h" + config.title.size);
 	title.appendChild(document.createTextNode(config.title.text));

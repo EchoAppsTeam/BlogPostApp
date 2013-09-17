@@ -2,9 +2,9 @@
 
 var $ = jQuery;
 
-if (Echo.AppServer.Dashboard.isDefined("BlogPost.Dashboard")) return;
+if (Echo.AppServer.Dashboard.isDefined("AcmeCorporation.Apps.BlogPost.Dashboard")) return;
 
-var dashboard = Echo.AppServer.Dashboard.manifest("BlogPost.Dashboard");
+var dashboard = Echo.AppServer.Dashboard.manifest("AcmeCorporation.Apps.BlogPost.Dashboard");
 
 dashboard.inherits = Echo.Utils.getComponent("Echo.AppServer.Dashboards.AppSettings");
 

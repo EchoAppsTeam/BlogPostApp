@@ -5,20 +5,20 @@
 	"app_version": "0.1.0",
 	"icon": "[place_your_url_here]/icon.png",
 	"developer": {
-		"id": "echo",
-		"name": "Echo",
-		"url": "http://www.aboutecho.com",
-		"email": "solutions@aboutecho.com",
-		"icon": "http://cdn.echoenabled.com/images/echo.png"
+		"id": "acme",
+		"name": "Acme Corporation",
+		"url": "http://www.acme-corporation.com",
+		"email": "support@acme-corporation.com",
+		"icon": "http://www.acme-corporation.com/acme-logo.png"
 	},
 	"dashboards": [{
 		"id": "instances",
 		"title": "Instances",
 		"script": "[place_your_url_here]/dashboard.js",
-		"component": "BlogPost.Dashboard"
+		"component": "AcmeCorporation.Apps.BlogPost.Dashboard"
 	}],
 	"client_widget": {
-		"component": "BlogPost",
+		"component": "AcmeCorporation.Apps.BlogPost",
 		"script": "[place_your_url_here]/app.js"
 	},
 	"cloudapp_protocol_version": "1.0.0"
